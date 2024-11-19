@@ -1,6 +1,6 @@
 //
 //  PostData.swift
-//  H4X0R
+//  H4K0R
 //
 //  Created by Jeff Patterson on 11/17/24.
 //
@@ -18,7 +18,7 @@ struct Post: Decodable, Identifiable {
     /// the name is wrong. Since we have to use the HN field to get the proper items we use a computed
     /// property to conver the HN field into the field required from the protocol Identifiable.
     var id: String { return self.objectID }
-    
+
     /// This property has to have a name for the protocol to work AND it has to be here for the JSON
     /// decoder to decode properly and render the HN story headlines.
     let objectID: String
